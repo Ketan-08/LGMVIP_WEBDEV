@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    /* overflow:auto; */
+    
+    
+}
+#start{
+    width: 100vw;
+    height: 100vh;
+    cursor:pointer;
+    /* z-index: -10; */
+}
+
+.carousel-item{
+    width: 100vw;
+    height: 100vh;
+} 
+ .carousel-item img{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.bannerContainer {
+    position:absolute; 
+}
+.carousel {
+    position:absolute;
+    top:0;    
+    z-index: -1;
+    width: 100vw;
+    /* overflow: hidden; */
+    /* border: 2px solid red; */
+    padding: 5px;
+}
+.carousel-caption{
+    text-align: center;
+    top: 40%;
+    font-family: 'Baloo Tamma 2', cursive;
+    color: rgb(12, 236, 113);
+}
+#navbar{
+    /* margin: 5px; */
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    z-index: 100;
+    
+}
+ul h1{
+    color:antiquewhite;
+    top: 0%;
+    left: 0px;
+    width: 500px;
+    font-family: 'Bubblegum Sans', cursive;
+    cursor: pointer;
+}  
+
+
+ul{
+    display: flex;
+    text-decoration: none;
+    /* justify-content: center;
+    text-align: center; */
+    list-style: none;
+} 
+ul li a{
+    display: flex;
+    text-decoration: none;
+    color: rgb(221, 218, 219);
+    margin: 10px;
+    padding: 5px;
+    /* font-weight: bold; */
+    font-family: 'Bubblegum Sans', cursive;
+}
+li a:hover{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px; 
+}
+
+.mybtn{
+    outline: none;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    background-color: blueviolet;
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+/* Home Part CSS */
+
+#home{
+    /* position:absolute; */
+    /* border: 2px solid red; */
+    display: grid;
+    /* margin-left: 250px;
+    margin-right: 250px; */
+    margin: 10px 250px;
+    grid-template-areas:
+    'heading heading heading'
+    'para para logo'
+    'card1 card2 card3'
+     ;
+    
+}
+#home h1{
+    grid-area: heading;
+    text-align: center;
+    margin: 70px 0px;
+    font-size: 50px;
+    font-family: 'Bubblegum Sans', cursive;
+    font-weight: 800;
+}
+#home h2{
+    grid-area: heading;
+    text-align: center;
+}
+#home p{
+    grid-area: para;
+    text-align: center;
+}
+#logo{
+    margin: 5px;
+    grid-area: logo;
+    height: 80px;
+    width: 300px;
+   
+}
+#card1{
+    grid-area: card1;
+     margin-top: 15px;
+    width: 300px;
+    height: 400px;
+    
+}
+#card1 img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 60px;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#card2 img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 60px;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#card3 img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 60px;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#card2{
+    grid-area: card2;
+    margin-top: 15px;
+    width: 300px;
+    height: 400px;
+    
+}
+#card3{
+    grid-area: card3;
+margin-top: 15px;
+    width: 300px;
+    height: 400px;
+   
+}
+.btn-info{
+    display: flex;
+    margin: auto;
+    margin-top: 70px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+
+}
+.btn-info:hover{
+    background-color:rgb(255, 0, 170);
+    /* color: white; */
+}
+
+/* Projects Part CSS */
+
+#project{
+    display: grid;
+    text-align: center;
+    grid-template-areas: 
+    'head head head head'
+    'prj1 prj2 prj3 prj4';
+}
+
+.prjs{
+    height: 70vh;
+    background-color: gainsboro;
+    padding: 10px;
+}
+
+#project h1{
+    grid-area: head;
+    text-align: center;
+    margin: 70px 10px;
+    font-size: 50px;
+    font-family: 'Bubblegum Sans', cursive;
+    font-weight: 800;
+}
+#project h3{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#prj1{
+    grid-area: prj1;
+    width: 380px;
+}
+#prj1:hover{
+    background-color: yellow;
+}
+#prj1 img{
+    display: block;
+    margin: auto;
+    height: 180px;
+}
+#prj2{
+    grid-area: prj2;
+}
+#prj2:hover{
+    background-color: yellow;
+}
+#prj2 img{
+    display: block;
+    margin: auto;
+    height: 180px;
+}
+#prj3{
+    grid-area: prj3;
+    width: 380px;
+}
+#prj3:hover{
+    background-color: yellow;
+}
+#prj3 img{
+    display: block;
+    margin: auto;
+    height: 180px;
+}
+#prj4{
+    grid-area: prj4;
+}
+#prj4:hover{
+    background-color: yellow;
+}
+#prj4 img{
+    display: block;
+    margin: auto;
+    height: 180px;
+}
+.mybtnprj{
+   margin: 10px;
+   padding: 5px;
+   /* border: 2px solid black; */
+   border-radius: 3px;
+   background-color:skyblue;
+}
+.mybtnprj:hover{
+    background-color: rgb(255, 0, 170);
+    
+}
+
+/* Price Table CSS */
+
+#pricing{
+    /* background-color: rgb(162, 221, 160);
+    border: 2px solid black; */
+    /* height: 80vh; */
+    margin: 10px;
+}
+
+#pricehead{
+    /* background-color: aquamarine; */
+    text-align: center;
+    margin: 25px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-family: 'Bubblegum Sans', cursive;
+    font-weight: 800;
+}
+#pricetable{
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 20px;
+    
+}
+
+.plans{
+    margin: 20px;
+    padding: 20px;
+}
+.plans i{
+    text-align: center;
+}
+.plans p{
+    text-align: center;
+    font-weight: bold;
+}
+#plan1{
+    border-right: 2px solid black;
+}
+#plan2{
+    border-right: 2px solid black;
+}
+
+
+/* Video Project CSS */
+
+.carou{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.carou h1{
+    text-align: center;
+    margin: 20px 10px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Bubblegum Sans', cursive;
+    font-weight: 500;
+}
+.caroubox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videos{
+    display: inline-block;
+    width: 50%;
+    height: 450px;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    margin: 20px;
+    display: none;
+}
+
+.leftbtn,.rightbtn{
+    /* height: 30vh; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    /* height: 40px; */
+    text-decoration: none;
+    text-align: center;
+    /* background-color: pink; */
+    color: black;
+    font-size: 45px;
+}
+
+
+/* Team Part CSS */
+
+#team{
+    margin-top: 100px;
+    display: grid;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    grid-template-areas:
+    'head head head'
+    'mem1 mem2 mem3'
+    'mem4 mem5 mem6';
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+#team h1{
+    grid-area: head;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bubblegum Sans', cursive;
+    font-weight: 800;
+}
+#member1 img{
+    position: relative;
+}
+#member2 img{
+    position: relative;
+}
+#member3 img{
+    position: relative;
+}
+#member4 img{
+    position: relative;
+}
+#member5 img{
+    position: relative;
+}
+#member6 img{
+    position: relative;
+}
+.connect{
+    display: flex;
+    justify-content: center;
+    transform: translate(-6%,-235%);
+}
+.connect i{
+    margin-right: 5px;
+    margin-left: 8px;
+    display: none;
+    cursor: pointer;
+    /* z-index: 10; */
+    
+
+    /* padding: 5px; */
+}
+
+
+{#member1,#member2,#member3,#member4,#member5,#member6}
+img:hover ~ .connect i{
+        display: inline;        
+    }
+#team img:hover{
+     opacity: 0.5;
+}
+/* .connect i:hover{
+    display: inline;
+    cursor: pointer;    
+} */
+
+
+#member1{
+    grid-area: mem1;
+}
+
+#member2{
+    grid-area: mem2;
+}
+#member3{
+    grid-area: mem3;
+}
+#member4{
+    grid-area: mem4;
+}
+#member5{
+    grid-area: mem5;
+}
+#member6{
+    grid-area: mem6;
+}
+
+
+/* Life In TechCrack part CSS */
+
+#Life{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(110, 10, 85); */
+    background-color: gainsboro;
+    margin-top: 50px;
+}
+
+.main-carousel{
+  bottom: 10px;
+ 
+}
+
+#disp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 70%;
+    height: 400px;
+    margin: auto;
+}
+#disp img{
+    width: 45vw;
+    height: 45vh;
+    border: 5px solid black;
+    border-radius: 50px;
+}
+
+
+/* NewsLetter Part CSS */
+
+.News{
+    background: url('newsletter.jfif') no-repeat center/cover;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.News h1{
+    font-size: 50px;
+    font-family: 'Bubblegum Sans', cursive;
+    font-weight: 800;
+}
+
+.elements{
+    display: flex;
+}
+
+.elements input{
+    margin-top: 50px;
+    margin-left:30%;
+    outline: none;
+    width: 30%;
+    height: 40px;
+    display: block;  
+}
+
+.elements button{
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    margin-left: 200px;
+}
+
+.login p{
+    text-align: center;
+    color: whitesmoke;
+    width: 200px;
+    font-weight: bold;    
+}
+
+.login #login{
+    width: 100px;
+    height: 40px;
+    outline: none;
+    background-color: rgb(70, 16, 70);
+    color: white;
+}
+
+.login #login:hover{
+    background-color:green;
+}
+
+/* Blogs Section */
+
+#BlogSection{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#BlogSection h1{
+    text-align: center;
+    margin: 50px 10px;
+    font-size: 50px;
+    font-family: 'Bubblegum Sans', cursive;
+    font-weight: 800;
+}
+
+#BlogDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blogs{
+    margin: auto;
+    height: 500px;
+    width: 300px;
+    
+}
+
+.blogs img{
+    width: 300px;
+    height: 200px;
+}
+
+.blogs h4,p{
+    text-align: center;
+    margin-top: 10px;
+}
+.blogs button{
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+    outline:none;
+    background-color:gainsboro ;
+    
+    padding: 6px;
+}
+.blogs button:hover{
+    background-color:rgb(95, 20, 95);
+    color: white;
+}
+
+#contact{
+    /* border : 2px solid red; */
+    display: flex;
+    height: 100vh;
+    margin-top: 70px;
+}
+#map{  
+    width: 100%;
+}
+#map img{
+    width: 100%;
+    height: 100vh;
+}
+
+#form{
+    background-color: rgb(253, 251, 251);
+    width: 100%;
+    /* color: white; */
+}
+#form h1{
+    text-align: center;
+    /* margin: 50px 10px; */
+    font-size: 50px;
+    font-family: 'Bubblegum Sans', cursive;
+    font-weight: 200;
+}
+.row{
+    padding: 15px;
+}
+
+#cbtn{
+    display: block;
+    margin: auto;
+    background-color:rgb(50, 143, 205);
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.foot{
+    margin: 70px;
+    /* border: 2px solid black; */
+}
+
+#follow i{
+    margin: 8px;
+    width: 16px;
+    height: 16px;
+}
+#follow i:hover{
+    cursor: pointer;
+    /* color: blue; */
+    transform: scale(2);
+}
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-twitter:hover{
+    color: rgb(31, 171, 226);
+}
+.fa-google-plus:hover{
+    color: red;
+}
+.fa-linkedin-square:hover{
+    color: rgb(96, 96, 219);
+}
+.fa-youtube-play:hover{
+    color: red;
+}
+.fa-instagram:hover{
+    color: rgb(248, 8, 148);
+}
+footer h6{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* MEDIA QUERIES FOR RESPONSIVESS */
+
+
+
+@media screen and (max-width: 1200px) {
+  /* body{
+     background-color: aqua;
+      overflow: auto; 
+     
+ }  */
+ 
+.main-carousel {
+    display: flex;
+    flex-direction: column;
+}
+ .carousel-item img{
+     width: 100vw;
+     height: 100vh;
+ }
+ #navbar{
+     display: flex;
+     width: 100vw;
+ }
+
+ #navbar ul li a{
+     width: 100px;
+ }
+
+ #start{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+ }
+ #home{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     margin: 0;
+ }
+
+
+ #hr{
+     display: none;
+ }
+
+ #project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+ }
+ #project div{
+     width:380px ;
+     height: 479px;
+     margin: 5px;
+ }
+
+ #pricetable{
+     display: flex;
+     flex-direction: column;
+ }
+ #pricetable div{
+     border: none;
+ }
+
+ .carou video{
+     /* width: 50%; */
+     height: 80%;
+     
+ }
+
+ #team{
+     height: 70%;
+     display: flex;
+     flex-direction: column;
+     justify-content:left;
+     align-items: center;
+     margin: 0;
+     
+ }
+ /* #team{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+    margin: 0;
+ } */
+
+ #team img{
+     width: 80%;
+     height: 80%;
+     margin: 0;
+
+ }
+
+ #Life{
+     display: flex;
+     flex-direction: column;
+     height: 70%;
+     /* margin: 0; */
+ }
+ #disp img{
+     width: 80%;
+     height: 50%;
+ }
+ .main-carousel{
+    /* margin: 0;
+    padding: 0; */
+     display: flex;
+     flex-direction: column;   
+     width: 80%;
+
+ }
+ 
+ .main-carousel button{
+     width: 10%;
+     height: 50%;
+ }
+
+
+
+
+ .carousel-cell {
+     margin: 0;
+    width: 60%;
+    padding: 0;
+ }
+ .carousel-cell img {
+     margin: 0;
+    width: 50%;
+    height: 50%;
+    display: block;
+ }
+
+
+
+
+
+#BlogSection{
+    margin: 0;
+}
+
+ #BlogDiv{
+     flex-direction: column;
+     justify-content: left;
+     align-items:flex-start;
+     /* font-size: 50%; */
+     flex-wrap: wrap;
+    
+ }
+ /* #BlogDiv img{
+     width: 50%;
+     height: 40%;
+ } */
+
+
+ .News .login{
+     flex-direction: column;
+ }
+
+ #contact{
+     flex-direction: column;
+     height: auto;
+ }
+
+ #map img{
+     height: 50vh;
+     width: 100%;
+ }
+
+ footer{
+     margin-top: 50px;
+     display: flex;
+     flex-direction: column;
+ }
+
+ #follow{
+     margin: 5px;
+ }
+
+}

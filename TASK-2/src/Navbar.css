@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+nav{
+    display: flex;
+    /* background:linear-gradient(skyblue,white); */
+    /* margin-bottom: 50px; */
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 45px;
+}
+
+nav button{
+    cursor: pointer;
+    width: 100px;
+    height: 45px;
+    margin: auto;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(120, 211, 0);
+    font-weight: bold;
+}
+
+nav button:hover{
+    background-color: rgb(55, 146, 55);
+    color: white;
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 155px; */
+    margin-bottom: 20px;
+    
+    /* margin-right: auto; */
+}
+
+#search input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    text-align: center;
+}
+
+hr{
+    color: rgb(0, 0, 0);
+    line-height: 10px;
+}

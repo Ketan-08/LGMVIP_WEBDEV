@@ -1,0 +1,25 @@
+body{
+  /* background-color: gainsboro; */
+  background:radial-gradient(skyblue,white);
+}
+
+.App Loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
